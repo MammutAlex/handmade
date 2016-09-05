@@ -20,111 +20,30 @@
           href="/css/style.css">
 </head>
 <body>
-<div class="slicknav_menu"><a href="http://lazytheme.win/html/gloing-preview/index2.html#"
-                              aria-haspopup="true"
-                              tabindex="0"
-                              class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span></span></a>
+<div class="slicknav_menu">
     <ul class="slicknav_nav slicknav_hidden"
         style="display: none;"
         aria-hidden="true"
         role="menu">
-        <li class="slicknav_collapsed slicknav_parent"><a href="http://lazytheme.win/html/gloing-preview/index2.html#"
-                                                          role="menuitem"
-                                                          aria-haspopup="true"
-                                                          tabindex="-1"
-                                                          class="slicknav_item slicknav_row"><a href="http://lazytheme.win/html/gloing-preview/index2.html#"
-                                                                                                tabindex="-1">Home</a><span class="slicknav_arrow"></span>
-            </a>
-            <ul role="menu"
-                class="slicknav_hidden"
-                style="display: none;"
-                aria-hidden="true">
-                <li><a href="http://lazytheme.win/html/gloing-preview/index3.html"
-                       role="menuitem"
-                       tabindex="-1">home 2 column</a></li>
-                <li><a href="http://lazytheme.win/html/gloing-preview/index.html"
-                       role="menuitem"
-                       tabindex="-1">home 3 column</a></li>
-                <li><a href="http://lazytheme.win/html/gloing-preview/index2.html"
-                       role="menuitem"
-                       tabindex="-1">home 4 column</a></li>
-            </ul>
-        </li>
-        <li><a href="http://lazytheme.win/html/gloing-preview/about.html"
+        <li><a href="/"
                role="menuitem"
-               tabindex="-1">About</a></li>
-        <li class="slicknav_collapsed slicknav_parent"><a href="http://lazytheme.win/html/gloing-preview/index2.html#"
-                                                          role="menuitem"
-                                                          aria-haspopup="true"
-                                                          tabindex="-1"
-                                                          class="slicknav_item slicknav_row">
-                <a href="http://lazytheme.win/html/gloing-preview/index2.html#"
-                   tabindex="-1">Portfolio</a><span class="slicknav_arrow"></span>
-            </a>
-            <ul role="menu"
-                class="slicknav_hidden"
-                style="display: none;"
-                aria-hidden="true">
-                <li><a href="http://lazytheme.win/html/gloing-preview/portfolio3.html"
-                       role="menuitem"
-                       tabindex="-1">2 column</a></li>
-                <li><a href="http://lazytheme.win/html/gloing-preview/portfolio2.html"
-                       role="menuitem"
-                       tabindex="-1">3 column</a></li>
-                <li><a href="http://lazytheme.win/html/gloing-preview/portfolio.html"
-                       role="menuitem"
-                       tabindex="-1">4 column</a></li>
-                <li><a href="http://lazytheme.win/html/gloing-preview/project-single.html"
-                       role="menuitem"
-                       tabindex="-1">Single v1</a></li>
-                <li><a href="http://lazytheme.win/html/gloing-preview/project-single2.html"
-                       role="menuitem"
-                       tabindex="-1">Single v2</a></li>
-                <li><a href="http://lazytheme.win/html/gloing-preview/project-single3.html"
-                       role="menuitem"
-                       tabindex="-1">Single v3</a></li>
-                <li><a href="http://lazytheme.win/html/gloing-preview/project-single4.html"
-                       role="menuitem"
-                       tabindex="-1">Single v4</a></li>
-            </ul>
-        </li>
-        <li class="slicknav_collapsed slicknav_parent"><a href="http://lazytheme.win/html/gloing-preview/index2.html#"
-                                                          role="menuitem"
-                                                          aria-haspopup="true"
-                                                          tabindex="-1"
-                                                          class="slicknav_item slicknav_row">
-                <a href="http://lazytheme.win/html/gloing-preview/index2.html#"
-                   tabindex="-1">blog</a><span class="slicknav_arrow"></span>
-            </a>
-            <ul role="menu"
-                class="slicknav_hidden"
-                style="display: none;"
-                aria-hidden="true">
-                <li><a href="http://lazytheme.win/html/gloing-preview/blog2.html"
-                       role="menuitem"
-                       tabindex="-1">Blog Grid v1</a></li>
-                <li><a href="http://lazytheme.win/html/gloing-preview/blog3.html"
-                       role="menuitem"
-                       tabindex="-1">Blog Grid v2</a></li>
-                <li><a href="http://lazytheme.win/html/gloing-preview/blog.html"
-                       role="menuitem"
-                       tabindex="-1">Blog Full Width</a></li>
-                <li><a href="http://lazytheme.win/html/gloing-preview/blog4.html"
-                       role="menuitem"
-                       tabindex="-1">Blog Classic</a></li>
-
-            </ul>
-        </li>
-        <li><a href="http://lazytheme.win/html/gloing-preview/contact.html"
+               tabindex="-1">Портфоліо</a></li>
+        <li><a href="/about"
                role="menuitem"
-               tabindex="-1">Contact</a></li>
+               tabindex="-1">Про мене</a></li>
+        <li><a href="/blog"
+               role="menuitem"
+               tabindex="-1">Блог</a></li>
+        <li><a href="/contact"
+               role="menuitem"
+               tabindex="-1">Контакти</a></li>
     </ul>
 </div>
 <header>
     <div class="container">
         <div class="header-holder">
             <div class="logo">
-                <a href="http://lazytheme.win/html/gloing-preview/index.html">
+                <a href="/">
                     Gloing
                 </a>
             </div>
@@ -134,41 +53,13 @@
             <nav>
                 <ul class="menu"
                     id="menu">
-                    <li><a href="http://lazytheme.win/html/gloing-preview/index2.html#">Home</a>
-                        <ul>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/index3.html">home 2 column</a></li>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/index.html">home 3 column</a></li>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/index2.html">home 4 column</a></li>
-                        </ul>
+                    <li><a href="/">Портфоліо</a>
                     </li>
-                    <li><a href="http://lazytheme.win/html/gloing-preview/about.html">About</a></li>
+                    <li><a href="/about">Про мене</a></li>
                     <li>
-                        <a href="http://lazytheme.win/html/gloing-preview/index2.html#">Portfolio</a>
-                        <ul>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/portfolio3.html">2 column</a></li>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/portfolio2.html">3 column</a></li>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/portfolio.html">4 column</a></li>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/project-single.html">Single v1</a>
-                            </li>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/project-single2.html">Single v2</a>
-                            </li>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/project-single3.html">Single v3</a>
-                            </li>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/project-single4.html">Single v4</a>
-                            </li>
-                        </ul>
+                        <a href="/blog">Блог</a>
                     </li>
-                    <li>
-                        <a href="http://lazytheme.win/html/gloing-preview/index2.html#">blog</a>
-                        <ul>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/blog2.html">Blog Grid v1</a></li>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/blog3.html">Blog Grid v2</a></li>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/blog.html">Blog Full Width</a></li>
-                            <li><a href="http://lazytheme.win/html/gloing-preview/blog4.html">Blog Classic</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="http://lazytheme.win/html/gloing-preview/contact.html">Contact</a></li>
+                    <li><a href="/contact">Контакти</a></li>
                 </ul>
             </nav>
             <div class="clear"></div>
