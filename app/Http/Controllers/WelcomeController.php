@@ -2,6 +2,7 @@
 
     namespace App\Http\Controllers;
 
+    use App\Contact;
     use Illuminate\Http\Request;
 
     use App\Http\Requests;
@@ -36,5 +37,11 @@
         public function portfolio($portfolioId)
         {
             return view('portfolio');
+        }
+
+        public function contactPost(Request $request)
+        {
+            Contact::create($request->all());
+            return redirect('/contact')->with('success', 'Ваше повідомлення відправлено');
         }
     }

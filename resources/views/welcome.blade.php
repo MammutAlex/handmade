@@ -4,12 +4,12 @@
         <div class="head-photo"
              style="background-image: url(/img/main.jpg);"></div>
         <div class="title-holder">
-            <div class="page-title">
-                <h2>hello-<strong><span class="typewrite"
+            <div class="page-title machinery-text">
+                <h2>Привіт &#8212; <strong><span class="typewrite"
                                         data-period="2000"
-                                        data-type="[ &quot;I am John Doe&quot;,&quot; I LIKE TO WATCH MOVIE&quot;,&quot; I AM A BIKE RIDER&quot; ]"><span class="wrap"> I LIKE TO WATC</span></span></strong>
+                                        data-type="[ &quot;Я Тетяна Ковальчук&quot;,&quot; Я люблю створювати красиве&quot;,&quot; Я люблю фарбувати котів&quot; ]"><span class="wrap"> Я люблю майструвати</span></span></strong>
                 </h2>
-                <span>web designer front-end developer</span>
+                <span>дизайнер, художник, педагог</span>
             </div>
         </div>
     </div>
@@ -18,11 +18,11 @@
             <div class="filters">
                 <ul id="filters">
                     <li class="active"
-                        data-filter="*">All
+                        data-filter="*">Все
                     </li>
-                    <li data-filter=".artwork">Art Work</li>
-                    <li data-filter=".webdesign">Web</li>
-                    <li data-filter=".design">Design</li>
+                    <li data-filter=".artwork">Майстер-класи</li>
+                    <li data-filter=".webdesign">Програми</li>
+                    <li data-filter=".design">Дизайн</li>
                 </ul>
             </div>
             <div class="row portfolio-masonry"

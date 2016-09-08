@@ -18,6 +18,12 @@
           href="/css/bootstrap.min.css">
     <link rel="stylesheet"
           href="/css/style.css">
+    <link rel="stylesheet"
+          href="/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+          rel="stylesheet">
 </head>
 <body>
 <div class="slicknav_menu">
@@ -43,8 +49,10 @@
     <div class="container">
         <div class="header-holder">
             <div class="logo">
-                <a href="/">
-                    Gloing
+                <a id="logo"
+                   class="machinery-text"
+                   href="/">
+                    Made with LOVE
                 </a>
             </div>
             <div class="mobile-menu">
@@ -71,8 +79,8 @@
 </div>
 
 <footer>
-    <span>Copyright © 2016 Gloing - Portfolio Powered by <a href="http://lazytheme.win/"
-                                                            target="_BLANK">lazythemes</a></span>
+    <span>Copyright © 2016 Created by <a href="https://github.com/MammutCris"
+                                         target="_BLANK">mammut</a></span>
 </footer>
 <script src="/js/jquery-1.11.3.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>

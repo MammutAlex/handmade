@@ -1,3 +1,9 @@
+#logo{
+    font-family: 'Special Elite', cursive;
+}
+.machinery-text{
+    font-family: 'Roboto Slab', serif;
+}
 .slicknav_menu,
 header .logo {
     position: relative;
@@ -861,7 +867,7 @@ footer span {
     padding: 10px 20px;
     width: auto;
     border: none;
-    background-color: #141618;
+    background-color: #2d6398;
     float: right;
     color: #fff;
     margin: 0

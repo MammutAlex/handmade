@@ -5,3 +5,4 @@
     Route::get('/blog/{blog}', 'WelcomeController@blogSingle');
     Route::get('/about', 'WelcomeController@about');
     Route::get('/contact', 'WelcomeController@contact');
+    Route::post('/mail-contact', 'WelcomeController@contactPost');
