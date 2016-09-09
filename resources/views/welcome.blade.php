@@ -6,8 +6,8 @@
         <div class="title-holder">
             <div class="page-title machinery-text">
                 <h2>Привіт &#8212; <strong><span class="typewrite"
-                                        data-period="2000"
-                                        data-type="[ &quot;Я Тетяна Ковальчук&quot;,&quot; Я люблю створювати красиве&quot;,&quot; Я люблю фарбувати котів&quot; ]"><span class="wrap"> Я люблю майструвати</span></span></strong>
+                                                 data-period="2000"
+                                                 data-type="[ &quot;Я Тетяна Ковальчук&quot;,&quot; Я люблю створювати красиве&quot;,&quot; Я люблю фарбувати котів&quot; ]"><span class="wrap"> Я люблю майструвати</span></span></strong>
                 </h2>
                 <span>дизайнер, художник, педагог</span>
             </div>
@@ -20,9 +20,9 @@
                     <li class="active"
                         data-filter="*">Все
                     </li>
-                    <li data-filter=".artwork">Майстер-класи</li>
-                    <li data-filter=".webdesign">Програми</li>
-                    <li data-filter=".design">Дизайн</li>
+                    @foreach($tags as $tag)
+                        <li data-filter=".{{$tag->class}}">{{$tag->title}}</li>
+                    @endforeach
                 </ul>
             </div>
             <div class="row portfolio-masonry"
