@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Contact;
+use App\Portfolio;
 use App\Tags;
 use Illuminate\Http\Request;
 
@@ -10,9 +11,9 @@ use App\Http\Requests;
 
 class WelcomeController extends Controller
 {
-    public function index(Tags $tags)
+    public function index(Tags $tags, Portfolio $portfolio)
     {
-        return view('welcome', ['tags' => $tags->get()]);
+        return view('welcome', ['tags' => $tags->get(), 'portfolios' => $portfolio->get()]);
     }
 
     public function blog()
@@ -35,9 +36,10 @@ class WelcomeController extends Controller
         return view('blog-single');
     }
 
-    public function portfolio($portfolioId)
+    public function portfolio(Portfolio $base, $portfolioId)
     {
-        return view('portfolio');
+        $body = $base->find($portfolioId);
+        return view('portfolio', ['portfolio' => $body]);
     }
 
     public function contactPost(Request $request)

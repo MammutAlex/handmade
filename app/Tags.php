@@ -10,4 +10,9 @@ class Tags extends Model
         'class',
         'title'
     ];
+
+    public function portfolio()
+    {
+        return $this->hasMany('App\Portfolio', 'tag_id');
+    }
 }

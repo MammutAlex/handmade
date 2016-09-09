@@ -29,6 +29,9 @@ return [
             (new Page(\App\Tags::class))
                 ->setIcon('fa fa-users')
                 ->setPriority(0),
+            (new Page(\App\Portfolio::class))
+                ->setIcon('fa fa-users')
+                ->setPriority(0),
         ]
     ],
 
