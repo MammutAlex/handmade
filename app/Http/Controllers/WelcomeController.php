@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Blog;
 use App\Contact;
 use App\Portfolio;
 use App\Tags;
@@ -16,9 +17,10 @@ class WelcomeController extends Controller
         return view('welcome', ['tags' => $tags->get(), 'portfolios' => $portfolio->get()]);
     }
 
-    public function blog()
+    public function blog(Blog $blog)
     {
-        return view('blog');
+        $blogs = $blog->paginate(15);
+        return view('blog', ['blogs' => $blogs]);
     }
 
     public function about()
@@ -31,9 +33,10 @@ class WelcomeController extends Controller
         return view('contact');
     }
 
-    public function blogSingle($blogId)
+    public function blogSingle($blogId, Blog $data)
     {
-        return view('blog-single');
+        $blog = $data->find($blogId);
+        return view('blog-single', ['blog' => $blog]);
     }
 
     public function portfolio(Portfolio $base, $portfolioId)
