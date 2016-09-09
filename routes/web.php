@@ -6,3 +6,6 @@
     Route::get('/about', 'WelcomeController@about');
     Route::get('/contact', 'WelcomeController@contact');
     Route::post('/mail-contact', 'WelcomeController@contactPost');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
