@@ -4,7 +4,7 @@
         <div class="head-photo"
              style="background-image: url(/{{$blog->phoneimg}});"></div>
         <div class="title-holder">
-            <div class="page-title">
+            <div class="page-title machinery-text">
                 <h2>{{$blog->title}}</h2>
                 <span>{{$blog->subtitle}}</span>
             </div>
@@ -20,7 +20,7 @@
                                 <div class="details">
                                     <span>{{$blog->created_at}}</span>
                                 </div>
-                                {{$blog->text}}
+                                {!! $blog->text !!}
                             </div>
                         </div>
                     </div>

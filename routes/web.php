@@ -9,6 +9,3 @@
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::get('/phpinfo', function () {
-    return phpinfo();
-});
