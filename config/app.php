@@ -185,6 +185,7 @@
              * Development
              */
             Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+            Jenssegers\Rollbar\RollbarServiceProvider::class,
 
         ],
 
