@@ -6,9 +6,11 @@ use App\Blog;
 use App\Contact;
 use App\Portfolio;
 use App\Tags;
+use Config;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Mail;
 
 class WelcomeController extends Controller
 {
@@ -47,7 +49,17 @@ class WelcomeController extends Controller
 
     public function contactPost(Request $request)
     {
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'email' => 'required|max:255|email',
+            'subject' => 'required|max:255',
+            'message' => 'required',
+        ]);
         Contact::create($request->all());
+        Mail::send('emails.contact', ['data' => $request->all()], function ($message) {
+            $message->from('contactme@dream-made.pro', 'Traumhimmel');
+            $message->to('tayna_83@ukr.net', '')->subject('Лист з сайту');
+        });
         return redirect('/contact')->with('success', 'Ваше повідомлення відправлено');
     }
 }

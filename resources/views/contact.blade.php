@@ -38,25 +38,62 @@
                               action="/mail-contact">
                             {{Form::token()}}
                             <div class="row">
-                                <div class="col-md-6"><input name="name"
-                                                             type="text"
-                                                             placeholder="Імʼя"
-                                                             style="cursor: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
+                                <div class="col-md-6">
+                                    @if($errors->has('name'))
+                                        <div class="alert alert-danger">
+                                            @foreach ($errors->get('name') as $error)
+                                                {{$error}} <br>
+                                            @endforeach
+                                        </div>
+                                    @endif
+                                    <input name="name"
+                                           type="text"
+                                           placeholder="Імʼя"
+                                           @if(!$errors->has('name'))value="{{old("name")}}"@endif>
                                 </div>
-                                <div class="col-md-6"><input name="email"
-                                                             type="text"
-                                                             placeholder="Email"></div>
+                                <div class="col-md-6">
+                                    @if($errors->has('email'))
+                                        <div class="alert alert-danger">
+                                            @foreach ($errors->get('email') as $error)
+                                                {{$error}} <br>
+                                            @endforeach
+                                        </div>
+                                    @endif
+                                    <input name="email"
+                                           type="text"
+                                           placeholder="Email"
+                                           @if(!$errors->has('email'))value="{{old("email")}}"@endif>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12"><input name="subject"
-                                                              type="text"
-                                                              placeholder="Тема"></div>
+                                <div class="col-md-12">
+                                    @if($errors->has('subject'))
+                                        <div class="alert alert-danger">
+                                            @foreach ($errors->get('subject') as $error)
+                                                {{$error}} <br>
+                                            @endforeach
+                                        </div>
+                                    @endif
+                                    <input name="subject"
+                                           type="text"
+                                           placeholder="Тема"
+                                           @if(!$errors->has('subject'))value="{{old("subject")}}"@endif>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12"><textarea name="message"
-                                                                 placeholder="Повідомлення"
-                                                                 cols="30"
-                                                                 rows="10"></textarea></div>
+                                <div class="col-md-12">
+                                    @if($errors->has('message'))
+                                        <div class="alert alert-danger">
+                                            @foreach ($errors->get('message') as $error)
+                                                {{$error}} <br>
+                                            @endforeach
+                                        </div>
+                                    @endif
+                                    <textarea name="message"
+                                              placeholder="Повідомлення"
+                                              cols="30"
+                                              rows="10">@if(!$errors->has('subject')){{old("subject")}}@endif</textarea>
+                                </div>
                             </div>
                             <input type="submit"
                                    class="send"
