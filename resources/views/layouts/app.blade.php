@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
     <!-- Page Title -->
-    <title>Gloing - Portfolio for Creatives</title>
+    <title>Dream-made  - Тетяна Ковальчук</title>
     <!-- Fonts -->
     <link href="/css/css"
           rel="stylesheet"
