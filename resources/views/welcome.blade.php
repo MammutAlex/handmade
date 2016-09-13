@@ -25,8 +25,8 @@
                     @endforeach
                 </ul>
             </div>
-            @foreach($portfolios as $portfolio)
-                <div class="row portfolio-masonry">
+            <div class="row portfolio-masonry">
+                @foreach($portfolios as $portfolio)
                     <div class="selector col-md-3 col-sm-6 col-xs-12 {{$portfolio->tag->class}}">
                         <div class="item">
                             <a href="/portfolio/{{$portfolio->id}}">
@@ -41,8 +41,8 @@
                             </a>
                         </div>
                     </div>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
         </div>
     </div>
 @endsection
