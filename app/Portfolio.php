@@ -16,4 +16,14 @@ class Portfolio extends Model
     {
         return $this->belongsTo('App\Tags', 'tag_id');
     }
+
+    public function getImagesAttribute($value)
+    {
+        return preg_split('/,/', $value, -1, PREG_SPLIT_NO_EMPTY);
+    }
+
+    public function setImagesAttribute($images)
+    {
+        $this->attributes['images'] = implode(',', $images);
+    }
 }

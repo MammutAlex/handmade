@@ -34,8 +34,10 @@
                 <div class="col-md-7 col-sm-7 col-xs-12 col-md-offset-1 col-sm-offset-1">
                     <div class="project-photos">
                         <ul>
-                            <li><img src="/{{$portfolio->img}}"
-                                     alt="{{$portfolio->title}}"></li>
+                            @foreach($portfolio->images as $image)
+                                <li><img src="/{{$image}}"
+                                         alt="{{$portfolio->title}}"></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>

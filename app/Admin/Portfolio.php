@@ -27,6 +27,7 @@ AdminSection::registerModel(Portfolio::class, function (ModelConfiguration $mode
             AdminFormElement::select('tag_id', 'Тег')->setModelForOptions('App\Tags')->setDisplay('title'),
             AdminFormElement::text('title', 'Заголовок'),
             AdminFormElement::image('img', 'Обкладинка'),
+            AdminFormElement::images('images', 'Зображення'),
             AdminFormElement::ckeditor('text', 'Текст'),
             AdminFormElement::date('date', 'Дата створення роботи'),
         ]);
