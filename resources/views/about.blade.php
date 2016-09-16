@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Мої вміння та захоплення')
 @section('content')
     <div class="home-photography">
         <div class="head-photo"

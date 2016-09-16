@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Замовлення безпосередньо у майстра')
 @section('content')
     <div class="home-photography">
         <div class="head-photo"
@@ -7,7 +8,8 @@
             <div class="page-title machinery-text">
                 <h2>Привіт &#8212; <strong><span class="typewrite"
                                                  data-period="2000"
-                                                 data-type="[ &quot;Я Тетяна Ковальчук&quot;,&quot; Я люблю створювати красиве&quot;,&quot; Я люблю фарбувати котів&quot; ]"><span class="wrap"> Я люблю майструвати</span></span></strong>
+                                                 data-type="[ &quot;Я Тетяна Ковальчук&quot;,&quot; Я люблю створювати красиве&quot;,&quot; Я люблю фарбувати котів&quot; ]"><span
+                                    class="wrap"> Я люблю майструвати</span></span></strong>
                 </h2>
                 <span>дизайнер, художник, педагог</span>
             </div>

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Телефон, пошта та форма звязку для найбільш зручного контакту з нами')
 @section('content')
     <div class="home-photography">
         <div class="head-photo"

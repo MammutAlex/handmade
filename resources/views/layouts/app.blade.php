@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type"
           content="text/html; charset=UTF-8">
     <!-- Page Title -->
-    <title>Dream-made - Тетяна Ковальчук</title>
+    <title>Творчі майстер-класи у Києві @yield('title')</title>
     <!-- Fonts -->
     <link href="/css/css"
           rel="stylesheet"
