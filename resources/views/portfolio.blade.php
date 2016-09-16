@@ -11,23 +11,26 @@
             </div>
         </div>
     </div>
-    <div class="project-single">
+    <div class="project-single" itemscope itemtype="http://schema.org/Article">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="project-content">
                         <div class="text-content">
-                            <h2>{{$portfolio->title}}</h2>
-                            {!! $portfolio->text !!}
+                            <h2 itemprop="name">{{$portfolio->title}}</h2>
+                            <div itemprop="articleBody">
+                                {!! $portfolio->text !!}
+                            </div>
                         </div>
                         <div class="details-holder">
                             <div class="details">
                                 <h4>Автор</h4>
-                                <span>Тетяна Ковальчук</span>
+                                <span itemprop="author" itemscope itemtype="http://schema.org/Person">Тетяна Ковальчук</span>
                             </div>
                             <div class="details">
                                 <h4>Дата створення</h4>
-                                <span>{{$portfolio->date}}</span>
+                                <span itemprop="datePublished"
+                                      content="{{$portfolio->date}}">{{$portfolio->date}}</span>
                             </div>
                         </div>
                     </div>
@@ -37,7 +40,7 @@
                         <ul>
                             @foreach($portfolio->images as $image)
                                 <li><img src="/{{$image}}"
-                                         alt="{{$portfolio->title}}"></li>
+                                         alt="{{$portfolio->title}}" itemprop="image"></li>
                             @endforeach
                         </ul>
                     </div>
