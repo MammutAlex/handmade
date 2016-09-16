@@ -4,6 +4,7 @@
           content="text/html; charset=UTF-8">
     <!-- Page Title -->
     <title>Творчі майстер-класи у Києві @yield('title')</title>
+    <meta property="og:site_name" content="@yield('title')" />
     <!-- Fonts -->
     <link href="/css/css"
           rel="stylesheet"
