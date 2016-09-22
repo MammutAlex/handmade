@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<head lang="uk">
+<html lang="uk">
+<head>
     <meta http-equiv="Content-Type"
           content="text/html; charset=UTF-8">
-    <link rel="shortcut icon" href="/favicon.gif" type="image/gif">
+    <link rel="shortcut icon"
+          href="/favicon.gif"
+          type="image/gif">
     <!-- Page Title -->
     <title>Творчі майстер-класи у Києві @yield('title')</title>
-    <meta property="og:site_name" content="@yield('title')" />
+    <meta property="og:site_name"
+          content="@yield('title')"/>
     <!-- Fonts -->
     <link href="/css/css"
           rel="stylesheet"
