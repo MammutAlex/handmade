@@ -39,7 +39,7 @@
                     <div class="project-photos">
                         <ul>
                             @foreach($portfolio->images as $image)
-                                <li><img src="/{{$image}}" itemprop="image"
+                                <li><img src="/{{$image}}"
                                          alt="{{$portfolio->title}}"></li>
                             @endforeach
                         </ul>
