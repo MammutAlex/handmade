@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<head lang="uk" >
+<head lang="uk">
     <meta http-equiv="Content-Type"
           content="text/html; charset=UTF-8">
     <link rel="shortcut icon" href="/favicon.gif" type="image/gif">
