@@ -19,7 +19,7 @@
         {
             if (
                 env('APP_URL') !=
-                'global' or
+                'development' or
                 Request::root() ==
                 env('APP_URL') or
                 Request::root() ==
