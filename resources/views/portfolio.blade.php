@@ -23,9 +23,9 @@
                             </div>
                         </div>
                         <div class="details-holder">
-                            <div class="details">
+                            <div class="details" itemprop="author" itemscope itemtype="http://schema.org/Person">
                                 <h4>Автор</h4>
-                                <span>Тетяна Ковальчук</span>
+                                <span itemprop="name">Тетяна Ковальчук</span>
                             </div>
                             <div class="details">
                                 <h4>Дата створення</h4>
@@ -39,7 +39,7 @@
                     <div class="project-photos">
                         <ul>
                             @foreach($portfolio->images as $image)
-                                <li><img src="/{{$image}}"
+                                <li><img src="/{{$image}}" itemprop="image"
                                          alt="{{$portfolio->title}}"></li>
                             @endforeach
                         </ul>
