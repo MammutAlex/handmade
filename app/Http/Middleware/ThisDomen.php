@@ -17,7 +17,10 @@
          */
         public function handle($request, Closure $next)
         {
-            if (Request::root() ==
+            if (
+                env('APP_URL') !=
+                'global' or
+                Request::root() ==
                 env('APP_URL') or
                 Request::root() ==
                 env('APP_URL_WWW')
