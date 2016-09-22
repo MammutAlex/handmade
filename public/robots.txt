@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Disallow: /login
+Disallow: /register
+Disallow: /admin
+Crawl-delay: 2
+Sitemap: http://dream-made.pro/sitemap.xml

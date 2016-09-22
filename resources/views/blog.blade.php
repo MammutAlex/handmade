@@ -1,12 +1,13 @@
 @extends('layouts.app')
+@section('title', 'Наш досвід майстрування різних речей, та детальний опис створення поробок')
 @section('content')
     <div class="home-photography">
         <div class="head-photo"
              style="background-image: url(/img/main.jpg);"></div>
         <div class="title-holder">
             <div class="page-title">
-                <h2>Blog and News</h2>
-                <span>MAKE IT CLEAN AND SIMPLE</span>
+                <h2>Блог та новини</h2>
+                <span>Майструємо разом</span>
             </div>
         </div>
     </div>

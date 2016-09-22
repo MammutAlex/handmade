@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', $portfolio->title)
 @section('content')
     <div class="home-photography">
         <div class="head-photo"
@@ -10,14 +11,16 @@
             </div>
         </div>
     </div>
-    <div class="project-single">
+    <div class="project-single" itemscope itemtype="http://schema.org/Article">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="project-content">
                         <div class="text-content">
-                            <h2>{{$portfolio->title}}</h2>
-                            {!! $portfolio->text !!}
+                            <h2 itemprop="name">{{$portfolio->title}}</h2>
+                            <div itemprop="articleBody">
+                                {!! $portfolio->text !!}
+                            </div>
                         </div>
                         <div class="details-holder">
                             <div class="details">
@@ -26,7 +29,8 @@
                             </div>
                             <div class="details">
                                 <h4>Дата створення</h4>
-                                <span>{{$portfolio->date}}</span>
+                                <span itemprop="datePublished"
+                                      content="{{$portfolio->date}}">{{$portfolio->date}}</span>
                             </div>
                         </div>
                     </div>

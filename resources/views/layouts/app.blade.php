@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<head>
+<head lang="uk" >
     <meta http-equiv="Content-Type"
           content="text/html; charset=UTF-8">
     <link rel="shortcut icon" href="/favicon.gif" type="image/gif">
     <!-- Page Title -->
-    <title>Dream-made - Тетяна Ковальчук</title>
+    <title>Творчі майстер-класи у Києві @yield('title')</title>
+    <meta property="og:site_name" content="@yield('title')" />
     <!-- Fonts -->
     <link href="/css/css"
           rel="stylesheet"
