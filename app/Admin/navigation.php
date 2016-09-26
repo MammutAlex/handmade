@@ -18,7 +18,4 @@
         (new Page(\App\Blog::class))
             ->setIcon('fa fa-users')
             ->setPriority(0),
-        (new Page(\App\Blog::class))
-            ->setIcon('fa fa-users')
-            ->setPriority(0),
     ];

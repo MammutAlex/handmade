@@ -2,6 +2,7 @@
 
     namespace App\Http\Controllers;
 
+    use App\About;
     use App\Blog;
     use App\Contact;
     use App\Portfolio;
@@ -38,9 +39,9 @@
             return view('blog', ['blogs' => $blogs]);
         }
 
-        public function about()
+        public function about(About $about)
         {
-            return view('about');
+            return view('about', ['infos' => $about->orderBy('order', 'asc')->get()]);
         }
 
         public function contact()
