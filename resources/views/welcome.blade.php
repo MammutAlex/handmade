@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Замовлення безпосередньо у майстра')
+@section('title', 'Творчі майстер-класи у Києві замовлення у майстра')
 @section('content')
     <div class="home-photography">
         <div class="head-photo"

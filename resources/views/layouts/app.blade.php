@@ -9,7 +9,7 @@
     <meta name="viewport"
           content="width=device-width">
     <!-- Page Title -->
-    <title>Творчі майстер-класи у Києві @yield('title')</title>
+    <title>@yield('title')</title>
     <meta property="og:site_name"
           content="@yield('title')"/>
     <!-- Fonts -->
