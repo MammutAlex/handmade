@@ -6,7 +6,8 @@
     <link rel="shortcut icon"
           href="/favicon.gif"
           type="image/gif">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width">
     <!-- Page Title -->
     <title>Творчі майстер-класи у Києві @yield('title')</title>
     <meta property="og:site_name"
@@ -28,6 +29,8 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab"
           rel="stylesheet">
+
+    @yield('style')
 </head>
 <body>
 
@@ -111,5 +114,6 @@
     ga('send', 'pageview');
 
 </script>
+@yield('script')
 </body>
 </html>

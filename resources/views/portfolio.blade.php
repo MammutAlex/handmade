@@ -1,5 +1,9 @@
 @extends('layouts.app')
 @section('title', $portfolio->title)
+@section('style')
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+          rel="stylesheet">
+@endsection
 @section('content')
     <div class="home-photography">
         <div class="head-photo"
@@ -11,7 +15,9 @@
             </div>
         </div>
     </div>
-    <div class="project-single" itemscope itemtype="http://schema.org/Article">
+    <div class="project-single"
+         itemscope
+         itemtype="http://schema.org/Article">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
@@ -23,7 +29,10 @@
                             </div>
                         </div>
                         <div class="details-holder">
-                            <div class="details" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                            <div class="details"
+                                 itemprop="author"
+                                 itemscope
+                                 itemtype="http://schema.org/Person">
                                 <h4>Автор</h4>
                                 <span itemprop="name">Тетяна Ковальчук</span>
                             </div>
@@ -37,15 +46,21 @@
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12 col-md-offset-1 col-sm-offset-1">
                     <div class="project-photos">
-                        <ul>
+                        <div class="fotorama"
+                             data-nav="thumbs"
+                             data-autoplay="true"
+                             data-allowfullscreen="true">
                             @foreach($portfolio->images as $image)
-                                <li><img src="/{{$image}}"
-                                         alt="{{$portfolio->title}}"></li>
+                                <img src="/{{$image}}"
+                                     alt="{{$portfolio->title}}">
                             @endforeach
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+@endsection
+@section('script')
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 @endsection
