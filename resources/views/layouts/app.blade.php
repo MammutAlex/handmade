@@ -40,7 +40,7 @@
         style="display: none;"
         aria-hidden="true"
         role="menu">
-        <li><a href="/"
+        <li><a href="/portfolio"
                role="menuitem"
                tabindex="-1">Портфоліо</a></li>
         <li><a href="/about"
