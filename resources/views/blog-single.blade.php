@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title', $blog->title)
+@section('description', $blog->mintext)
 @section('content')
     <div class="home-photography">
         <div class="head-photo"

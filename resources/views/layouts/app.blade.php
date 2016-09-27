@@ -12,6 +12,10 @@
     <title>@yield('title')</title>
     <meta property="og:site_name"
           content="@yield('title')"/>
+    <meta name="description"
+          content="@yield('description', 'Замовте майстер-клас у Києві без посередників')"/>
+    <meta name="keywords"
+          content="@yield('tag', 'Майстер-клас, творчість')">
     <!-- Fonts -->
     <link href="/css/css"
           rel="stylesheet"

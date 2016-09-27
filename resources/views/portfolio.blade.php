@@ -1,9 +1,12 @@
 @extends('layouts.app')
 @section('title', $portfolio->title)
+@section('description', $portfolio->description)
+@section('tag', $portfolio->tag->title)
 @section('style')
     <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
           rel="stylesheet">
 @endsection
+
 @section('content')
     <div class="home-photography">
         <div class="head-photo"
