@@ -18,7 +18,7 @@
         public function handle($request, Closure $next)
         {
             if (
-                env('APP_URL') !=
+                env('APP_ENV') !=
                 'development' or
                 Request::root() ==
                 env('APP_URL') or
