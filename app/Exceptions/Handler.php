@@ -54,9 +54,9 @@
                 if (
                     env('APP_ENV') !=
                     'development' or
-                    Request::root() ==
+                    \Request::root() ==
                     env('APP_URL') or
-                    Request::root() ==
+                    \Request::root() ==
                     env('APP_URL_WWW')
                 ) {
                     return response()->view('errors.404', [], 404);
