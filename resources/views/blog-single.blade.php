@@ -44,29 +44,37 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <div class="pluso"
-                             data-background="none;"
-                             data-options="small,square,line,horizontal,counter,sepcounter=1,theme=14"
-                             data-services="vkontakte,facebook,twitter,google"></div>
-                        <div class="comments">
-                            <div class="comment">
-                                <div id="vk_comments"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="pluso"
+                                 data-background="none;"
+                                 data-options="small,square,line,horizontal,counter,sepcounter=1,theme=14"
+                                 data-services="vkontakte,facebook,twitter,google"></div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <div id="vk_comments"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <div class="comments">
-                            <div class="comment">
-                                <div class="fb-comments"
-                                     data-href="http://dream-made.pro/blog/{{$blog->id}}"
-                                     data-numposts="5"></div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="comments">
+                                <div class="comment">
+                                    <div class="fb-comments"
+                                         data-href="http://dream-made.pro/blog/{{$blog->id}}"
+                                         data-numposts="5"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     </div>
 @endsection
@@ -80,7 +88,6 @@
     <script type="text/javascript">(function () {
             if (window.pluso)if (typeof window.pluso.start == "function") return;
             if (window.ifpluso == undefined) {
-                window.ifpluso = 1;
                 var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
                 s.type = 'text/javascript';
                 s.charset = 'UTF-8';
