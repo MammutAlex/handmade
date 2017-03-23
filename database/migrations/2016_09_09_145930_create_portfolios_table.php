@@ -20,6 +20,7 @@ class CreatePortfoliosTable extends Migration
             $table->text('text');
             $table->string('img');
             $table->text('images');
+            $table->string('description');
             $table->date('date');
             $table->timestamps();
         });
